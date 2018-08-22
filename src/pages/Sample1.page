@@ -1,0 +1,14 @@
+<apex:page standardController="Account" recordSetVar="acc">
+
+                <apex:dataTable value="{!acc}" var="a" rowClasses="odd,even" styleClass="tableClass">
+					<apex:facet name="caption">table caption</apex:facet>
+                    <apex:facet name="header">table header</apex:facet>
+					<apex:facet name="footer">table footer</apex:facet>                    
+                    <apex:column >
+                    	<apex:facet name="header">Name</apex:facet>
+                        <apex:facet name="footer">column footer</apex:facet>
+                        <apex:outputText value="{!a.Name}"/>
+                    </apex:column>               
+                </apex:dataTable>
+
+</apex:page>

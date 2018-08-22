@@ -1,0 +1,42 @@
+<apex:page controller="showSelectedAccounts" sidebar="false">
+    <apex:form >
+        <apex:sectionHeader title="Interview Three"/>
+            <apex:pageBlock >
+            
+            <apex:pageBlockButtons >
+                <apex:outputPanel >
+                    <apex:commandButton value="Show Selected Accounts" status="status" action="{!ShowSelected}" rerender="spblock"/>
+                </apex:outputPanel>
+                <apex:actionStatus startText="Please Wait ..." id="status">
+                </apex:actionStatus>
+            </apex:pageBlockButtons>
+                        
+            <span><b>All Accounts</b></span>
+            <span style="padding-left:550px;"><b>Selected Accounts</b></span>
+            
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockTable value="{!lstWrapper}" var="Ewrap">
+                <apex:column headerValue="Selected">
+                    <apex:inputCheckbox value="{!Ewrap.selected}"/>
+                </apex:column>
+                <apex:column headerValue="Account Name">
+                    <apex:outputField value="{!Ewrap.Acc.Name}"/>
+                </apex:column>
+                <apex:column headerValue="Phone">
+                    <apex:outputField value="{!Ewrap.Acc.Phone}"/>
+                </apex:column>                
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockTable value="{!selectedAcc}" var="EAcc" id="spblock">
+                    <apex:column headerValue="Account Name">
+                        <apex:outputField value="{!EAcc.Name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Phone">
+                        <apex:outputField value="{!EAcc.Phone}"/>
+                    </apex:column>                    
+                </apex:pageBlockTable>
+            
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>

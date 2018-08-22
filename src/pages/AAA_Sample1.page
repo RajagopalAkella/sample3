@@ -1,0 +1,33 @@
+<apex:page standardController="Account">
+    <!--
+    <apex:sectionHeader title="Title" subtitle="Subtitle" description="Description" printUrl="https://www.google.com" help="https://www.google.co.in"/>
+    -->
+    
+    {! 10 } <br/>
+    {! 10+30 } <br/>
+    {! isnull(10) } <br/>
+    <br/>
+    <br/>
+    {! $user.lastname } <br/>
+    {! $user.firstname } <br/>
+    {! $profile.name }
+    <br/>
+    <br/>
+    {! $CurrentPage.parameters.Name } <br/>
+    {! $CurrentPage.parameters.age }
+    <br/>
+    <br/>
+    {! Account.Name } <br/>
+	{! Account.Industry }
+    <br/>
+    <br/>
+    <apex:form >
+    	<apex:inlineEditSupport >
+            <apex:outputLabel value="UserName"/><br/>
+            <apex:outputLabel >Password</apex:outputLabel>
+            <apex:outputText >{! Account.Name} </apex:outputText>
+            <apex:outputField value="{! Account.Name }" />
+    	</apex:inlineEditSupport>
+    </apex:form>
+    
+</apex:page>

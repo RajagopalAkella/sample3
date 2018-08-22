@@ -1,0 +1,57 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable,forceCommunity:availableForAllPageTypes" access="global">
+    <!-- Using BigDecimal JavaScript library from this github repository: -->
+    <!-- https://github.com/dtrebbien/BigDecimal.js -->
+    <ltng:require scripts="/resource/halfmoonbay__MathContext/,/resource/halfmoonbay__BigDecimal/"/>
+    <aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>    
+    <aura:attribute name="isDoneRendering" type="Boolean" default="false"/>
+    <aura:attribute name="selectedCategory" type="String" default="Length" />
+    <aura:attribute name="massOptions" type="String[]" 
+                    default="Kilogram,Gram,Milligram,Metric Ton,Short Ton, Long Ton,Pound,Ounce,Stone"/>
+    <aura:attribute name="lengthOptions" type="String[]" 
+                    default="Kilometer,Meter,Centimeter,Millimeter,Mile,Yard,Foot,Inch,Nautical Mile"/>
+    <aura:attribute name="temperatureOptions" type="String[]"
+                    default="Celsius,Fahrenheit,Kelvin"/>
+    <aura:attribute name="volumeOptions" type="String[]"
+                    default="Gallon,Quart,Pint,Liter,Ounce"/>
+    <aura:attribute name="areaOptions" type="String[]"
+                    default="Square km,Square meter,Acre,Hectare,Square foot,Square inch, Square yard,Square mile"/>
+    <aura:attribute name="placeholderInputText" type="String" default="Value to convert..."/>
+    <aura:attribute name="placeholderOutputText" type="String" default="Output..."/>
+    
+    <div style="padding:15px;background-color:#f5f5f5">
+        <p class="label">Conversion Category</p><br/>
+        <!-- Dropdown list for user to select the conversion category first. -->
+        <ui:inputSelect class="selectList units" aura:id="categorySelectList" 
+                        change="{!c.onConversionCategorySelect}">
+        	<ui:inputSelectOption text="Length" label="Length" value="true"/>
+            <ui:inputSelectOption text="Temperature" label="Temperature"/>
+            <ui:inputSelectOption text="Mass" label="Mass"/>
+            <ui:inputSelectOption text="Volume" label="Volume"/>
+            <ui:inputSelectOption text="Area" label="Area"/>
+        </ui:inputSelect>
+
+        <br/><p class="label">From</p><br/>
+         <!-- Dropdown list that is dynamically populated based on which category was chosen. -->
+         <ui:inputSelect class="selectList units" aura:id="inputSelectUnitFrom"
+                         change="{!c.onUnitFromChange}"/>                     
+         <div>
+         <!-- Input field contains the number to convert. -->                    
+         <ui:inputNumber class="values uiInputText" aura:id="inputNumberToConvert" 
+                         required="false" placeholder="{!v.placeholderInputText}"
+                         change="{!c.onUnitFromChange}" focus="{!c.onInputFocus}"
+                         blur="{!c.onInputNumberBlur}"/>
+		 </div>        
+               		                    		
+         <br/><p class="label">To</p><br/>
+        <!-- Dropdown list that is dynamically populated based on which category was chosen. -->
+         <ui:inputSelect class="selectList units" aura:id="inputSelectUnitTo"
+                         change="{!c.onUnitFromChange}"/>        
+        <div> 
+         <!-- Input/Output number contains converted value, but also accepts input to convert back. -->    	
+         <ui:inputNumber class="values uiInputText" aura:id="inputNumberConverted"
+                        required="false" change="{!c.onUnitFromChange}"
+                        placeholder="{!v.placeholderOutputText}" focus="{!c.onInputFocus}"
+                        blur="{!c.onOutputNumberBlur}"/> 
+        </div>
+	</div>
+</aura:component>

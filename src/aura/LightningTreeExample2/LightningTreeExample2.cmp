@@ -1,0 +1,8 @@
+<aura:component controller="LightningTreeApexController2" >
+
+    <aura:attribute name="recordId" type="String" default="a0I9000000fWQTe" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="items" type="Object"/>
+    <lightning:tree items="{! v.items }" header="Roles" onselect="{!c.handleSelect}"/>
+
+</aura:component>

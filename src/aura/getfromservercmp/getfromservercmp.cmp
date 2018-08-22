@@ -1,0 +1,7 @@
+<aura:component controller="SimpleServerSideController">
+    <aura:attribute name="firstName" type="String" default="world"/>
+    <aura:attribute name="retval" type="string" />
+    <lightning:button label="Call server" onclick="{!c.echo}"/>
+    <br />
+    return value: <ui:outputText value="{!v.retval}" />
+</aura:component>

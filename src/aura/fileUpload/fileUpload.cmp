@@ -1,0 +1,7 @@
+<aura:component controller="FileController">
+    <aura:attribute name="parentId" type="Id"/>
+    <div class="container">
+        <input type="file" class="file" aura:id="file" />
+        <button onclick="{!c.attFile}">Save</button>
+    </div>    
+</aura:component>

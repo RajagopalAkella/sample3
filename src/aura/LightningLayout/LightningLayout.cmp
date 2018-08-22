@@ -1,0 +1,95 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <ltng:require styles="{!$Resource.SLDS25 +	
+                          '/styles/salesforce-lightning-design-system.css'}"/>
+    <!--
+    <div class="demo-only" style="height: 30px;">
+        <header class="slds-global-header_container">
+                <div class="slds-global-header__item slds-text-body_small">Global header	</div>
+        </header>
+	</div>
+    -->
+    
+ 
+   
+<div class="slds-page-header slds-align_absolute-center slds-page-header__title background-color: white">
+    <div style="color:red;font-weight:bold">New Contact COI Contact</div>
+</div> 
+        
+    
+    <div class="c-container">
+        
+        <lightning:card >
+            
+            <aura:set attribute="title">
+            Hello!
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:badge label="footer"/>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+            
+            <lightning:layout horizontalAlign="spread" multiplerows="true">            
+                <lightning:layoutItem flexibility="auto" padding="around-small">INTERNAL INVESTMENTS<br/>$99,000,000.00</lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">INTERNAL BANK DEPOSITS<br/>$13,743.00</lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">WALLET SHARE: 99.78%</lightning:layoutItem>
+            </lightning:layout>
+            
+            <lightning:layout horizontalAlign="spread" multiplerows="true">
+                <lightning:layoutItem flexibility="auto" padding="around-small">TOTAL INVESTMENTS<br/>$99,079,629.00</lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">TOTAL BANK DEPOSITS<br/>$154,832.56</lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small"></lightning:layoutItem>
+            </lightning:layout>
+            
+        </lightning:card> 
+        
+        <lightning:card >            
+            <aura:set attribute="title">
+            Hello!
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:badge label="footer"/>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+             
+    <lightning:layout horizontalAlign="spread" multipleRows="true">
+    <lightning:layoutItem flexibility="grow" size="12" largeDeviceSize="4">
+        <lightning:layout horizontalAlign="spread" multipleRows="true">
+            <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="4" largeDeviceSize="4">INTERNAL INVESTMENTS<br/> Total1 Val</lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="4" largeDeviceSize="4">INTERNAL BANK DEPOSITS<br/> Total1 Val</lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="4" largeDeviceSize="4">WALLET SHARE: Val</lightning:layoutItem>
+        </lightning:layout>
+    </lightning:layoutItem>
+        </lightning:layout>
+             <br/>
+        <lightning:layout horizontalAlign="spread" multipleRows="true">
+        <lightning:layoutItem flexibility="grow" size="12" largeDeviceSize="4">
+            <lightning:layout horizontalAlign="spread" multipleRows="true">
+        <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="4" largeDeviceSize="4">TOTAL INVESTMENTS<br/> Total1 Val</lightning:layoutItem>
+        <lightning:layoutItem flexibility="grow" size="8" mediumDeviceSize="8" largeDeviceSize="8">TOTAL BANK DEPOSITS<br/> Total1 Val</lightning:layoutItem>
+       <!-- <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="4" largeDeviceSize="4">Total1 <br/> Total1 Val</lightning:layoutItem> -->
+        </lightning:layout>
+    </lightning:layoutItem>
+        
+      <!--  
+    <lightning:layoutItem flexibility="grow" size="12">1</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="8" mediumDeviceSize="10" largeDeviceSize="8">2</lightning:layoutItem>
+        <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="2" largeDeviceSize="4">Sample 1<br/>Sample3</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="6" largeDeviceSize="4">4</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="6" largeDeviceSize="4">5</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="12" largeDeviceSize="4">
+        <lightning:layout horizontalAlign="spread" multipleRows="true">
+            <lightning:layoutItem flexibility="grow" size="6" mediumDeviceSize="12" largeDeviceSize="6">Sample 2</lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" size="6" mediumDeviceSize="12" largeDeviceSize="6">7</lightning:layoutItem>
+        </lightning:layout>
+    </lightning:layoutItem>
+-->
+</lightning:layout>
+</lightning:card>
+        
+    </div>
+    
+</aura:component>

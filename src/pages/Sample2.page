@@ -1,0 +1,14 @@
+<!--  Page: -->
+			
+<apex:page controller="exampleCon">
+    <apex:form >
+        <apex:outputText value="Watch this counter: {!count}" id="counter"/>
+        <apex:actionStatus startText=" (incrementing...)" stopText=" (done)" id="counterStatus"/>
+        <apex:actionPoller action="{!incrementCounter}" reRender="counter" status="counterStatus" interval="15"/>
+        <br/>
+        <apex:outputPanel id="counter2">
+            <apex:outputText value="Click me!: {!count}"/>  
+            <apex:actionSupport event="onclick" action="{!incrementCounter}" reRender="counter2" status="counterStatus"/>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

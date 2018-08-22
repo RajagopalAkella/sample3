@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction" access="global" >    
+    <ltng:require styles="{!$Resource.SLDS25 +	
+                          '/styles/salesforce-lightning-design-system.css'}"/>
+    <a href="" onclick="{!c.addNewContact}" >Click Here</a>
+</aura:component>

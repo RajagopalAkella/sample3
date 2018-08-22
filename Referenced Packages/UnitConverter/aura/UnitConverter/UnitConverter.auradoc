@@ -1,0 +1,9 @@
+<aura:documentation>
+	<aura:description>
+        <p>The <code>UnitConverter</code> component provides a conversion calculator
+    for some common units of measurement for distance, temperature, mass, and volume.</p>
+    </aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		<p>To use the <code>UnitConverter</code> component, simply add it to your app.</p>
+	</aura:example>
+</aura:documentation>

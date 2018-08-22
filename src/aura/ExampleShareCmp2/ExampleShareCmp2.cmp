@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="SumResult" type="double" />
+    <aura:handler event="c.ExampleShareEvnt1" action="{!c.GetSum}" />
+    <!--<aura:handler name="init" value="{!this}" action="{!c.GetSum}" />-->
+    <h1>Total Diff is: <ui:outputNumber value="{!v.SumResult}" /></h1>
+</aura:component>

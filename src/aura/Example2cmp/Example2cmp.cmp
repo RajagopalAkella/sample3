@@ -1,0 +1,14 @@
+<aura:component >
+    <ltng:require styles="/resource/SLDS213/assets/styles/salesforce-lightning-design-system.css" />
+    <div class="slds">
+    	<button class="slds-button">Button</button>
+        <span class="slds-badge">Badge Label</span>
+        <nav role="navigation" aria-label="Breadcrumbs">
+  <ol class="slds-breadcrumb slds-list--horizontal">
+    <li class="slds-breadcrumb__item slds-text-title--caps"><a href="javascript:void(0);">Parent Entity</a></li>
+    <li class="slds-breadcrumb__item slds-text-title--caps"><a href="javascript:void(0);">Parent Record Name</a></li>
+  </ol>
+</nav>
+        
+    </div>
+</aura:component>

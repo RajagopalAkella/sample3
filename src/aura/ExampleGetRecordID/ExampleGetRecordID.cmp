@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	    <div>
+            <!-- <ui:outputText aura:id="recid" value="{!v.recordId}" /> -->
+            <ui:outputText value="{!v.recordId}" />
+        </div>
+</aura:component>

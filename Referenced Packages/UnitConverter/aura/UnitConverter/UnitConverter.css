@@ -1,0 +1,164 @@
+.THIS {
+	    
+}
+
+.THIS .units {  
+    color: #54698d; 
+  	font-size: 0.9rem;
+}
+.THIS .values { 
+    text-align: right;
+    color: #54698d; 
+  	font-size: 0.9rem;
+}
+.THIS .option {
+  color: #54698d; 
+  font-size: 0.9rem;
+}
+
+.THIS .selectList {
+background-color: #FFF;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImRvd25fMV8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJEb3duX3g0MF8yeC5wbmdfMV8iPg0KCTxnIGlkPSJkaXJlY3Rkb3duX2NvcHkiPg0KCQk8Zz4NCgkJCTxwYXRoIGZpbGw9IiM5Njk4OTkiIGQ9Ik01NS4wNjYsMTcuODY2Yy0wLjUzMy0wLjkzNC0xLjQ2Ny0xLjUzMy0yLjUzMy0xLjZDNTIuMzk4LDE2LjE5OSw0Mi4zOTgsMTUuNiwzMiwxNS42DQoJCQkJYy0xMC4zOTksMC0yMC40LDAuNi0yMC41MzMsMC42NjdjLTEuMDY2LDAuMDY2LTIuMDY2LDAuNjY2LTIuNTMzLDEuNmMtMC41MzMsMC45MzQtMC41MzMsMi4wNjYsMCwzDQoJCQkJYzcuOTMzLDE0LjA2NiwyMC40LDI2LjI2NywyMC45MzMsMjYuNzMyYzEuMiwxLjA2NiwzLjA2NiwxLjA2Niw0LjI2NywwYzAuNTMzLTAuNDY3LDEzLTEyLjY2NiwyMC45MzMtMjYuNzMyDQoJCQkJQzU1LjYsMTkuOTMzLDU1LjYsMTguOCw1NS4wNjYsMTcuODY2eiIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=");
+background-position: 95% 50%;
+background-repeat: no-repeat;
+background-size: 16px 16px, 100% 100%; 
+border-bottom-color: #3C3D3E;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100% 100% 100% 100%;
+border-image-source: none;
+border-image-width: 1 1 1 1;
+border-left-color: #3C3D3E;
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: #3C3D3E;
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: #3C3D3E;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: border-box;
+color: #3C3D3E;
+font-family: "Salesforce Sans", Arial, sans-serif;
+/*font-family: "Salesforce Sans";*/
+font-feature-settings: normal;
+font-kerning: auto;
+font-language-override: normal;
+font-size: 15px;
+font-size-adjust: none;
+font-stretch: normal;
+font-style: normal;
+font-synthesis: weight style;
+font-variant: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-weight: 400;
+height: 42px;    
+line-height: 25px;
+padding-bottom:7px; 
+padding-left: 14px;
+padding-right: 14px;
+padding-top: 7px;
+margin-bottom:5px;
+text-transform: none;
+visibility: visible;
+width: 100%;
+-webkit-appearance:none; 
+-moz-appearance: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+}
+
+.THIS .uiInputText {
+background-color: rgb(255, 255, 255);
+border-bottom-color: rgba(0, 0, 0, 0);
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgba(0, 0, 0, 0);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgba(0, 0, 0, 0);
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: none;
+box-sizing: border-box;
+color: rgb(60, 61, 62);
+cursor: auto;
+display: inline-block;
+font-family: "Salesforce Sans", Arial, sans-serif;
+/*font-family: 'Salesforce Sans';*/
+font-size: 15px;
+font-stretch: normal;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+height: 42px;
+letter-spacing: normal;
+line-height: 25px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-bottom: 7px;
+padding-left: 14px;
+padding-right: 14px;
+padding-top: 7px;
+text-align: start;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-transform: none;
+visibility: visible;
+word-spacing: 0px;
+writing-mode: lr-tb;
+width: 100%;
+-webkit-appearance:none; 
+-moz-appearance: none;
+}
+.THIS .label {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: rgb(104, 108, 112);
+    cursor: default;
+    display: inline-block;
+    /*font-family: 'Salesforce Sans';*/
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    visibility: visible;
+}
+
+.THIS input[type=number]::-webkit-inner-spin-button { -webkit-appearance:none; } 
+.THIS input[type=number]::-webkit-outer-spin-button { -webkit-appearance:none; } 
+.THIS input[type=number] { -moz-appearance:textfield; }

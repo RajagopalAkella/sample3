@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="variable1" type="double" default="1" />
+    <aura:attribute name="variable2" type="double" default="2" />
+    <aura:attribute name="result" type="double" />
+    
+    <ui:inputNumber label="Number 1: " value="{!v.variable1}" />
+    <ui:inputNumber label="Number 2: " value="{!v.variable2}" />
+    
+    <aura:handler name="change" value="{!v.variable1}" action="{!c.Calc}" />
+    <aura:handler name="change" value="{!v.variable2}" action="{!c.Calc}" />
+    <aura:handler name="init" value="{!this}" action="{!c.Calc}" />
+
+    <h1>Total sum is: <ui:outputNumber value="{!v.result}" /></h1>
+</aura:component>

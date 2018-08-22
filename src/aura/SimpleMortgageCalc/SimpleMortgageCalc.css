@@ -1,0 +1,39 @@
+.THIS {
+    padding: 16px;
+}
+
+.THIS input[type=text]{
+    font-size: 14px;
+    width: 150px;
+    padding: 8px;
+    margin: 4px 0;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+}
+
+.THIS h2 {
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+.THIS label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 6px;
+}
+
+.THIS button {
+    font-size: 1rem;
+    background: #EFEFEF;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.THIS principal {
+    font-size: 40px;
+    background: #EFEFEF;
+    color: blue;
+}

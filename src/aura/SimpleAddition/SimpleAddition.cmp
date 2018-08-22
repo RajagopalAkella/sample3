@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForRecordHome" 
+                access="global" >
+        <ltng:require styles="{!$Resource.SLDS213 +	
+                          '/assets/styles/salesforce-lightning-design-system.css'}"/>
+    <aura:attribute name="num1" type="double" default="1" />
+    <aura:attribute name="num2" type="double" default="2" />
+    <aura:attribute name="res" type="double" />
+    <aura:attribute name="samplestr" type="string" />
+    
+    <div>
+        <ui:inputNumber label="Number1 :" value="{!v.num1}" />
+        <ui:inputNumber label="Number2 :" value="{!v.num2}" />
+        <!-- <button class="slds-button">Button</button> -->
+        <button onclick="{!c.CalcSum}">Calculate</button>
+        <h2>Result is: <ui:outputNumber value="{!v.res}" /></h2>
+    </div>
+</aura:component>

@@ -1,0 +1,37 @@
+<aura:component controller="AwesomeProductController">
+    
+    <aura:attribute name="product" type="Product__c" default="{'sobjectType': 'Product__c'}"/>
+    <aura:attribute name="products" type="Product__c[]"/>
+    <aura:attribute name="productSizes" type="Product_Size__c[]"/>    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    <select onchange="{!c.change}">
+        <aura:iteration items="{!v.products}" var="p">
+            <option>{!p.Name}</option>
+        </aura:iteration>
+    </select>
+    
+    <br />
+    
+    <select>
+    <!-- <select onchange="{!c.change}"> -->
+    <aura:iteration items="{!v.productSizes}" var="ps">
+        <option>{!ps.Name}</option>
+    </aura:iteration>
+    </select>
+    
+    <br />
+    
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="no-padding">
+                        <span class="title">{!v.product.Name}</span>
+                    </div>
+                </div>                
+            </div>            
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="number1" type="double" />
+	<aura:attribute name="number2" type="double" />
+	<aura:attribute name="resultSum" type="double" />
+	
+	<div>
+		<ui:inputNumber label="Number1 :" value="{!v.number1}" />
+		<ui:inputNumber label="Number2 :" value="{!v.number2}" />
+		<button onclick="{!c.CalculateSum}">CalculateSum</button>
+		<h2>Total Sum: <ui:outputNumber value="{!v.resultSum}" /></h2>
+	</div>
+</aura:component>

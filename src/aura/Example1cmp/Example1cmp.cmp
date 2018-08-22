@@ -1,0 +1,16 @@
+<aura:component >
+
+    
+    <ltng:require styles="/resource/materialize/materialize/css/material-font.css,
+                          /resource/materialize/materialize/css/materialize.min.css"
+                  scripts="/resource/materialize/materialize/js/jquery.js,
+                           resource/materialize/materialize/js/materialize.min.js"/>
+  
+    <div class="ml">
+    	<a class="wave-effect waves-light btn">Stuff</a>
+        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        
+    </div>
+    
+    <!--   <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div> -->
+</aura:component>

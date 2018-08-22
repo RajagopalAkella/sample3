@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	<ltng:require styles="{!$Resource.DesignSystem +	
+                          '/assets/styles/salesforce-lightning-design-system-ltng.css'}"/>
+    <div class = "slds">
+    	<button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive" label="Click">
+</button>
+    </div>
+</aura:component>

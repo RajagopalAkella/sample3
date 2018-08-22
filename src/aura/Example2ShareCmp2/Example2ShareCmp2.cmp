@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="sumResult" type="double" />
+    <aura:handler event="c.Example2ShareEvnt1" action="{!c.GetSum}" />
+    
+    <h1>Total sum is: <ui:outputText value="{!v.sumResult}" /></h1>
+</aura:component>

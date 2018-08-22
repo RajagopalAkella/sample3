@@ -1,0 +1,7 @@
+<apex:page standardController="account">
+<apex:panelBar >
+<apex:repeat value="{!account.contacts}" var="c">
+<apex:panelBarItem label="{!c.firstname}">one</apex:panelBarItem>
+</apex:repeat>
+</apex:panelBar>
+</apex:page>

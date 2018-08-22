@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+<!--    <ltng:require styles="{!$Resource.SLDS25 +	
+                          '/styles/salesforce-lightning-design-system.css'}"/>
+-->
+ <button class="slds-button slds-button_outline-brand">Button</button>
+    
+    
+</aura:component>

@@ -1,0 +1,10 @@
+<aura:component controller="LightningTreeApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<!--
+        <ltng:require styles="{!$Resource.SLDS25 +	
+                              '/styles/salesforce-lightning-design-system.css'}"/>
+    -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="items" type="Object"/>
+    <lightning:tree items="{! v.items }" header="Roles" onselect="{!c.handleSelect}"/>
+
+</aura:component>

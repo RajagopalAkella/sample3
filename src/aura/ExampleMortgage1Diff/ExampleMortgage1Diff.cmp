@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <!--<aura:registerEvent name="change" type="c.ExampleMortgage1Event" /> -->
+    <aura:attribute name="diffRes" type="double" />
+    
+    <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
+    
+    <aura:handler event="c.ExampleMortgage1Event" action="{!c.doInit}" />
+	
+    <h1>Difference is: <ui:outputNumber value="{!v.diffRes}" /></h1>
+</aura:component>

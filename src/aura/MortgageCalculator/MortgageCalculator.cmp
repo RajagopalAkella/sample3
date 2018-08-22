@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable">
+    
+    <aura:registerEvent name="change" type="c.MortgageChange" />    
+    
+    <aura:attribute name="principal" type="double" default="2000000" />
+    <aura:attribute name="years" type="double" default="30" />
+    <aura:attribute name="rate" type="double" default="5" />
+    <aura:attribute name="monthlyPayment" type="double" />
+    
+    <aura:handler name="change" value="{!v.principal}" action="{!c.calculateMonthlyPayment}" />
+    <aura:handler name="change" value="{!v.years}" action="{!c.calculateMonthlyPayment}" />
+    <aura:handler name="change" value="{!v.rate}" action="{!c.calculateMonthlyPayment}" />
+    
+    <!-- Event handler with event as init. ie; when the below component is initialized, invoke c.doinit in the controller -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div>
+        <ui:inputNumber label="Principal:" value="{!v.principal}" format="#" />
+        <ui:inputNumber label="Years:" value="{!v.years}" />
+        <ui:inputNumber label="rate" value="{!v.rate}" />        
+        <h2>Monthly Payment: <ui:outputCurrency value="{!v.monthlyPayment}" /></h2>        
+    </div>    
+    
+</aura:component>

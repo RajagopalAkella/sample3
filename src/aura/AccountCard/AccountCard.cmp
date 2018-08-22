@@ -1,0 +1,19 @@
+<aura:component >
+	<aura:attribute name="acc" type="Account"/>
+	<aura:registerEvent name="accountSelect" type="c:accountSelectionEvent"/>
+	<div class="card red lighten-1">
+		<div class="card-content white-text">
+			<span class="card-title">
+				<ui:outputText value="{!v.acc.Name}"/>
+			</span>
+			<p>
+				<ui:outputText value="{!v.acc.Description}"/>
+			</p>
+		</div>
+		<div class="card-action">
+			<a herf="#" onclick="{!c.accountSelected}">
+				Show Cases
+			</a>
+		</div>
+	</div>
+</aura:component>

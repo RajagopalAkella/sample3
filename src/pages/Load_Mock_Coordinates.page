@@ -1,0 +1,40 @@
+<apex:page controller="Realtime_Tracking_Controller">
+    <button type="button" onclick="load_coords();">
+        Load the Coordinates
+    </button>
+    
+    <script>
+        var i = 0;
+        var locArray = [
+                        [37.789755, -122.407461],
+                        [37.809063, -122.412211],
+                        [37.833816, -122.494162],
+                        [37.818393, -122.478584],
+                        [37.805611, -122.476052],
+                        [37.767958, -122.441574],
+                        [37.782981, -122.404051],
+                        [37.781107, -122.403997]            
+                        ];
+        function load_coords(){
+            console.log(i);
+
+            if(i < locArray.length){                
+                Realtime_Tracking_Controller.insertNewCheckin(
+                            locArray[i][0],
+                            locArray[i][1],
+                            function(result, event){ 
+                            }
+                );                
+                //Realtime_Tracking_Controller.deleteCheckin(function(result, event){ });
+                sleep(3000, load_coords);
+            }
+
+            i++;
+        }
+    
+        function sleep(millis, callback) {
+            setTimeout(function(){ callback(); }, millis);
+        }    
+    </script>
+        
+</apex:page>

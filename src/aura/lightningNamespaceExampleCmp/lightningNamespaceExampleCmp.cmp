@@ -1,0 +1,12 @@
+<aura:component >
+    
+    <ltng:require styles="{!$Resource.SLDS213 + 
+                          '/assets/styles/salesforce-lightning-design-system.css'}"/>
+   <!-- <lightning:spinner variant="brand" size="large"/> -->
+    
+   <lightning:button label="Toggle" variant="brand" onclick="{!c.toggle}"/>
+    <div>
+        <lightning:spinner aura:id="mySpinner" class="slds-hide"/> 
+    </div>
+
+</aura:component>
